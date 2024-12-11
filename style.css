@@ -1,0 +1,465 @@
+*{
+      margin:0;
+      padding:0;
+    }
+    
+    html{
+      scroll-behavior:smooth;
+      scroll-padding:300px;
+    }
+    
+    body{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background:white;
+    }
+    
+    nav{
+      z-index:9999;
+      top:0;
+      position:sticky;
+      background:#1b1b1b;
+      width:100%;
+      height:140px;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      
+    }
+    
+    nav .logo{
+      font-size: 60px;
+      font-weight: bold;
+      color:white;
+      margin:0px 0px 0px 50px;
+    }
+    
+    nav .logo span{
+      color:#E85C0D;
+    }
+
+    
+    nav ul{
+      display: block ;
+      list-style: none;
+      font-size:50px;
+      position:fixed;
+      top:140px;
+      left:-100%;
+      background:rgba(39, 36, 36,.9);
+      height:100vh;
+      width:100%;
+      text-align: center;
+      transition:all .2s ease;
+    }
+    
+    nav ul li{
+     margin:100px 5px 100px 5px;
+     padding:8px;
+    }
+    
+    .input{
+      display:none;
+    }
+    
+    nav ul li a{
+      border-radius:15px;
+      padding:30px auto;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition:all .2s ease;
+    }
+    nav i{
+      color:white;
+      font-size: 80px;
+      margin: 0px 70px 0px 0px;
+      border-radius:100px;
+      cursor: pointer;
+    }
+    
+      #click:checked~ul{
+      left:0%;
+    }
+    
+    nav ul li a.active,
+    nav ul li a:hover{
+      color:#E85C0D;
+    }
+    
+    
+    @keyframes conta1{
+      0%{
+        opacity:0;
+        transform: translateY(30px) scale(0.9);
+      }
+      100%{
+        opacity:1;
+        transform: translateY(0px) scale(1);
+      }
+    }
+    
+    
+    
+    .container1{
+      padding:0px 0px 0px 100px;
+      margin:550px 50px 0px 50px;
+      border:none;
+      animation: conta1 0.5s;
+
+    }
+    
+    .container1 .there{
+      padding-left:5px;
+      font-size:55px;
+    }
+    
+    .container1 .myrohit{
+      color:#E85C0D;
+      font-size: 100px;
+    }
+    
+    .container1 span{
+      color:black;
+    }
+    
+    .slider-container{
+      display:block;
+      text-align:center;
+      justify-content:center;
+      align-items:center;
+    }
+    
+    .slider h3{
+      padding-left:8px;
+      font-weight:400;
+      border-right: .50rem solid #E85C0D;
+      font-size:45px;
+      color:black;
+      width:0;
+      white-space:nowrap;
+      overflow:hidden;
+      animation: slider 4s steps(28,end) infinite forwards;
+    }
+    
+    @keyframes slider{
+      0%{
+        width:0;
+      }
+      50%{
+        width:37.8%;
+      }
+    }
+  
+    .container1 button a{
+      text-decoration:none;
+      color:white;
+    }
+    .container1 .seework{
+     padding: 23px 45px;
+     border-radius: 18px;
+     margin:165px 0px 0px 0px;
+     font-size: 40px;
+     font-weight: bold;
+     background: #E85C0D;
+    }
+    
+    .container2{
+      text-align: center;
+      padding:0px;
+      margin:800px 50px 0px 50px;
+      border:none;
+    }
+    
+    .container2 img{
+      border-radius:50%;
+      box-shadow:1px 1px 20px black;
+      width:475px;
+      margin:0px 0px 0px 0px;
+    }
+    
+    .container2 h2{
+      font-size: 90px;
+      font-weight:bold;
+      margin:150px 0px 0px 0px;
+      color:black;
+    }
+    
+    .container2 .para{
+      padding:0px 30px 0px 30px;
+      font-weight:500;
+      font-size:14px;
+      margin:30px 30px 0px 30px;
+    }
+    
+    
+    .container3{
+      padding:0px 0px 0px 100px;
+      margin:340px 50px 0px 50px;
+      border:none;
+    }
+    
+    .container3 span{
+      font-weight: 900;
+      color:black;
+    }
+    
+    .container3 .cinfo{
+      padding:50px 0px 0px 0px;
+      font-weight:500;
+      font-size:15px;
+    }
+    
+    .container4{
+      padding:0px;
+      margin:340px 50px 0px 50px;
+      border:none;
+      
+    }
+    
+    .container4 .layer{
+      background:#E6E6E6;
+      overflow: hidden;
+      border:none;
+      box-shadow:1px 1px 20px black;
+      padding:0px;
+      margin:100px 60px 60px 60px;
+      border-radius:20px;
+    }
+    
+    .container4 .layer img{
+      width:100%;
+      height:100%;
+    }
+    
+   .container4 .layer h3{
+     color:#151D6D;
+     margin:70px 0px 0px 70px;
+     font-size: 30px;
+   }
+   
+  .container4 .layer h4{
+    margin:130px 0px 0px 70px;
+    font-size: 15px;
+  }
+  
+  .container4 .layer h1{
+    color:#166F00;
+    margin:70px 0px 65px 70px;
+    font-size: 25px;
+  }
+    
+    .container4 .education{
+      text-align:center;
+      font-size:65px;
+      font-weight: bold;
+    }
+    
+    .container4 i{
+      font-size:55px;
+      margin-right:18px;
+      text-align:center;
+    }
+    
+  .container5{
+  margin:50px 50px 0px 50px;
+  padding:50px;
+  border:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.container5 .skills{
+  width: 100%;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.container5 .skill-name{
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  margin: 60px 0px 15px 0px;
+}
+
+.container5 .skill-bar{
+  height: 35px;
+  background: #1b1b1b;
+  border-radius: 10px;
+}
+
+.container5 .skill-per{
+  height: 35px;
+  background: #E85C0D;
+  border-radius: 5px;
+  animation: fillBars 3s 1;
+}
+
+
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+  #myskills{
+   text-align: center;
+   margin:340px 50px 0px 50px;
+   border:none;
+  }
+  
+  
+  #myskills h1{
+  margin:150px 0px 50px 0px;
+  font-size:65px;
+  font-weight: bold;
+  color:black;
+  }
+  
+  #myskills p{
+    font-weight:500;
+    font-size:14px;
+    margin:20px 50px 20px 50px;
+  }
+  
+  .container6{
+    padding:50px;
+    margin:340px 50px 0px 50px;
+    border:none;
+    text-align: center;
+  }
+  
+  .container6 .inner-container{
+    margin:100px 50px 50px 50px;
+    overflow:hidden;
+    border:1px solid black;
+    border-radius:10px;
+  }
+  
+  .container6 .inner-container img{
+    width:100%;
+    height:100%;
+  }
+  
+  .container6 .propara{
+    padding:0px 10px 0px 10px;
+    font-weight:500;
+    font-size:14px;
+    margin:26px 30px 40px 30px;
+  }
+  
+   .container6 .prohad{
+     font-size:55px;
+     font-weight: bold;
+     margin-top:60px;
+   }
+   
+   .container6 #tophad{
+     font-size:65px;
+     font-weight: bold;
+   }
+   
+   
+   .container7{
+    padding:50px;
+    margin:340px 50px 0px 50px;
+    border:none;
+    text-align: center;
+  }
+  
+  .container7 input{
+    height:100px;
+    width:640px;
+    border-radius:10px;
+    padding:0px 0px 0px 35px;
+    font-size:40px;
+  }
+  
+  .container7 h2{
+    font-size:20px;
+    font-weight:500;
+  }
+  
+  .container7 h3{
+    font-size:30px;
+    margin-top:10px;
+  }
+  
+  .container7 #name{
+    margin:180px 0px 0px 0px;
+  }
+  
+  .container7 #mail{
+    margin:60px 0px 0px 0px;
+  }
+  
+  .container7 #area{
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding:25px 0px 0px 35px;
+    margin:60px 0px 0px 0px;
+    height:550px;
+    width:640px;
+    border-radius:10px;
+    font-size:40px;
+  }
+  
+  .container7 .send{
+     padding: 23px 45px;
+     border-radius: 12px;
+     color:#E85C0D;
+     margin:165px 0px 0px 0px;
+     font-size: 40px;
+     font-weight: bold;
+     border:1px solid #E85C0D;
+     background: transparent;
+  }
+  
+  
+  .container8{
+    margin:680px 50px 5px 50px;
+    padding:50px;
+    border:none;
+    text-align: center;
+
+  }
+  
+  .container8 i{
+    color:#58595D;
+    font-size:50px;
+    padding:10px;
+  }
+  
+  .container8 .inner{
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .container8 .channels{
+    padding:20px 10px 10px 10px;
+    font-size:30px;
+  }
+  .container8 .inner a{
+    text-decoration:none;
+    color:#58595D;
+  }
+  
+  .container9{
+    margin:0px;
+    padding:30px;
+    background:#58595D;
+    color:white;
+    border:none;
+    text-align: center;
+  }
+  
+  .container9 h3{
+    font-size:8px;
+  }
